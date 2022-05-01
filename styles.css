@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+* {
+	margin: 0%;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+header {
+	background-color: #353a40;
+	color: white;
+}
+
+#logo {
+	max-width: 150px;
+	max-height: 150px;
+	margin-left: 150px;
+}
+
+#navbarsExampleXxl {
+	margin-right: 150px;
+	font-size: x-large;
+}
+
+#compra {
+	color: #2b9043;
+}
+
+carrusel-img {
+	height: auto;
+	width: auto;
+	max-height: 200px;
+}
+
+.title-text {
+	font-size: xx-large;
+}
+
+.text-xl {
+	font-size: x-large;
+}
+
+.button-carrusel {
+	padding: 10px;
+}
+
+.button-compra {
+	background-color: #29a744
+}
+
+.carrusel text {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.filter {
+	-webkit-filter: brightness(60%);
+	filter: brightness(60%);
+}
+
+.no-filter {
+	-webkit-filter: brightness(100%);
+	filter: brightness(100%);
+}
+
+.orador p {
+	text-align: center;
+	margin: 0%;
+}
+
+.orador h1 {
+	text-align: center;
+}
+
+#card-lugar {
+	background-color: #343A40;
+	color: white;
+}
+
+#boton-lugar {
+	margin-left: 20px;
+}
+
+#dotted {
+	border-bottom: dotted;
+}
+
+#submit-button {
+	background-color: #96c93e;
+	border-radius: none;
+}
+
+footer {
+	background: linear-gradient(90deg, #1b3743 0%, #1e5371 80%);
+	padding: 20px;
+}
+
+#elementos-footer a {
+	color: white;
+}
+
+@media ( max-width :1650px) {
+	#navbarsExampleXxl {
+		margin-right: 75px;
+		font-size: x-large;
+	}
+	#logo {
+		margin-left: 50px;
+	}
+}
+
+@media ( max-width :1500px) {
+	#navbarsExampleXxl {
+		margin-right: 5px;
+		font-size: large;
+	}
+	#logo {
+		margin-left: 25px;
+	}
+}
+
+@media ( max-width :1399px) {
+	#logo {
+		margin-left: 15px;
+	}
+}
+
+.navbar-nav {
+	align-items: end;
+}
+
+@media ( max-width : 1100px) {
+	.title-text {
+		font-size: large;
+	}
+	.text-xl {
+		font-size: medium;
+	}
+	.button-carrusel {
+		margin: 0;
+	}
+}
+
+@media ( max-width : 940px) {
+	.button-carrusel {
+		padding: 3px;
+		margin-bottom: 0 important;
+	}
+	.card-lugar {
+		width: auto;
+		height: 100%;
+	}
+	#boton-lugar {
+		margin-bottom: 10px;
+	}
+}
+
+@media ( max-width : 600px) {
+	#logo {
+		max-width: 100px;
+		max-height: 100px;
+		margin-left: 1 px;
+	}
+	.title-text {
+		font-size: medium;
+	}
+	.text-xl {
+		font-size: small;
+		line-height: 1.5;
+	}
+	#elementos-footer {
+		display: block;
+	}
+}
+
+@media ( max-width : 500px) {
+	#navbarsExampleXxl {
+		font-size: medium;
+	}
+	.text-xl {
+		font-size: x-small;
+	}
+}
+
+@media ( max-width : 400px) {
+	.text-xl {
+		font-size: xx-small;
+		line-height: 1;
+	}
+	*h3 p:nth-child(1) {
+		margin-bottom: 0 rem;
+	}
+}
+
+p {
+	margin-bottom: 0;
+}

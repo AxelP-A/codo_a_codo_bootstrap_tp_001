@@ -33,6 +33,10 @@ carrusel-img {
 	max-height: 200px;
 }
 
+.carrusel-text {
+	padding-bottom: 150px;
+}
+
 .title-text {
 	font-size: xx-large;
 }
@@ -64,7 +68,7 @@ carrusel-img {
 	filter: brightness(100%);
 }
 
-.orador p {
+#oradores {
 	text-align: center;
 	margin: 0%;
 }
@@ -84,6 +88,11 @@ carrusel-img {
 
 #dotted {
 	border-bottom: dotted;
+}
+
+#container-form {
+	padding-right: 200px;
+	padding-left: 200px;
 }
 
 #submit-button {
@@ -124,10 +133,23 @@ footer {
 	#logo {
 		margin-left: 15px;
 	}
+	.carrusel-text {
+		padding-bottom: 100px;
+	}
 }
 
 .navbar-nav {
 	align-items: end;
+}
+
+@media ( max-width : 1200px) {
+	#container-form {
+		padding-right: 75px;
+		padding-left: 75px;
+	}
+	.carrusel-text {
+		padding-bottom: 50px;
+	}
 }
 
 @media ( max-width : 1100px) {
@@ -154,6 +176,13 @@ footer {
 	#boton-lugar {
 		margin-bottom: 10px;
 	}
+	#container-form {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	.carrusel-text {
+		padding-bottom: 10px;
+	}
 }
 
 @media ( max-width : 600px) {
@@ -171,6 +200,9 @@ footer {
 	}
 	#elementos-footer {
 		display: block;
+	}
+	.carrusel-text {
+		padding-bottom: 0px;
 	}
 }
 
@@ -190,6 +222,10 @@ footer {
 	}
 	*h3 p:nth-child(1) {
 		margin-bottom: 0 rem;
+	}
+	#container-form {
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 }
 

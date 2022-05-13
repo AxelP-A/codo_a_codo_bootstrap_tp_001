@@ -68,7 +68,7 @@ carrusel-img {
 	filter: brightness(100%);
 }
 
-#oradores {
+.oradores-text {
 	text-align: center;
 	margin: 0%;
 }
@@ -93,6 +93,7 @@ carrusel-img {
 #container-form {
 	padding-right: 200px;
 	padding-left: 200px;
+	text-align: center;
 }
 
 #submit-button {

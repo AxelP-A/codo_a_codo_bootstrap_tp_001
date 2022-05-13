@@ -96,9 +96,24 @@ carrusel-img {
 	text-align: center;
 }
 
+#container-form-compra {
+	padding-right: 200px;
+	padding-left: 200px;
+}
+
 #submit-button {
 	background-color: #96c93e;
 	border-radius: none;
+}
+
+#botonBorrar, #botonResumen {
+	background-color: #96c93e;
+	border-radius: none;
+	display: inline-flex;
+	flex-direction: row;
+	width: 49%;
+	justify-content: center;
+	margin-left: 5px;
 }
 
 footer {
@@ -106,8 +121,24 @@ footer {
 	padding: 20px;
 }
 
+#fixFooter {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
 #elementos-footer a {
 	color: white;
+}
+
+@media ( max-height :950px) {
+	#fixFooter {
+		position: relative;
+		left: auto;
+		bottom: auto;
+		width: 100%;
+	}
 }
 
 @media ( max-width :1650px) {
@@ -148,6 +179,10 @@ footer {
 		padding-right: 75px;
 		padding-left: 75px;
 	}
+	#container-form-compra {
+		padding-right: 75px;
+		padding-left: 75px;
+	}
 	.carrusel-text {
 		padding-bottom: 50px;
 	}
@@ -162,6 +197,9 @@ footer {
 	}
 	.button-carrusel {
 		margin: 0;
+	}
+	#formCompra button {
+		margin-left: 0px;
 	}
 }
 
@@ -178,6 +216,10 @@ footer {
 		margin-bottom: 10px;
 	}
 	#container-form {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	#container-form-compra {
 		padding-right: 25px;
 		padding-left: 25px;
 	}
@@ -225,6 +267,10 @@ footer {
 		margin-bottom: 0 rem;
 	}
 	#container-form {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	#container-form-compra {
 		padding-right: 10px;
 		padding-left: 10px;
 	}

@@ -8,6 +8,8 @@ let precio = 0;
 
 const botonResumen = document.querySelector("#botonResumen");
 botonResumen.addEventListener("click", function() {
+	/*event.preventdefault();
+	window.history.back();*/
 	if (validarCantidad(getCantidad()) && validarTexto(getNombre()) && validarTexto(getApellido()) && validarMail(getMail())) {
 		calcularPrecio();
 	} else {
@@ -21,6 +23,7 @@ botonBorrar.addEventListener("click", function() {
 	document.getElementById("inputFormCompraApellido").value = "";
 	document.getElementById("inputFormCompraMail").value = "";
 	document.getElementById("inputFormCompraCantidad").value = "";
+	document.querySelector("#precio").textContent = "Total a pagar: $ ";
 });
 
 function validarTexto(texto) {

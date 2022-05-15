@@ -116,6 +116,13 @@ carrusel-img {
 	margin-left: 5px;
 }
 
+#errores{
+	text-align:center;
+	margin:auto;
+	color: red;
+	padding-top:20px;
+}
+
 footer {
 	background: linear-gradient(90deg, #1b3743 0%, #1e5371 80%);
 	padding: 20px;

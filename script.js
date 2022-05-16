@@ -73,8 +73,6 @@ botonResumen.addEventListener("click", function(event) {
 		}
 */
 
-
-
 		/*
 		let arrayForm = [validacionCantidad(cantidadAux), validacionTexto(nombreAux), validacionTexto(apellidoAux), validacionMail(mailAux)];
 		for (let i = 0; i <= arrayForm.length; i++) {
@@ -94,14 +92,8 @@ botonResumen.addEventListener("click", function(event) {
 		}*/
 		/*event.preventDefault();
 		  event.stopPropagation();*/
-
-
-
-
-
 	}
 });
-
 
 /*
 (function () {
@@ -125,7 +117,6 @@ botonResumen.addEventListener("click", function(event) {
 })()
 */
 
-
 const botonBorrar = document.querySelector("#botonBorrar");
 botonBorrar.addEventListener("click", function() {
 	borrarCampos();
@@ -147,42 +138,23 @@ function borrarCampos() {
 	document.querySelector("#precio").textContent = "Total a pagar: $ ";
 }
 
-
-/*
-function validarInputNombre(inputNombre) {
-	if (validacionTexto(getNombre())) {
-		inputNombre.setCustomValidity("");
-	}
-	inputNombre.setCustomValidity(inputNombre.value + " no es un nombre correcto");
-	inputNombre.value = "";
-}*/
-
-
-
-
-
 function validacionTexto(texto) {
 	const nombreOapellido = /^(?=.{4,20}$)[a-zA-ZÀ-ÿ\u00f1\u00d1]+([a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/.exec(texto);
 	const comprobarTexto = !!nombreOapellido;
-	console.log("texto = " + comprobarTexto);
 	return comprobarTexto
 }
 
 function validacionMail(correo) {
 	const email = /^[a-zA-Z0-9.!Ññ#$%&'*+\=?^_`{|}~-]+@([\w-]+\.)+[\w-]{2,4}$/.exec(correo);
 	const comprobarMail = !!email;
-	console.log("Mail = " + comprobarMail);
 	return comprobarMail;
 }
 
 function validacionCantidad(cantidadSeleccionada) {
 	const cantidadAcomprobar = /^[0-9]{1,3}$/.exec(cantidadSeleccionada);
 	const comprobarCantidad = !!cantidadAcomprobar;
-	console.log("cantidad = " + comprobarCantidad);
 	return comprobarCantidad;
 }
-
-
 
 function setearDatos() {
 	setNombre();
@@ -191,7 +163,6 @@ function setearDatos() {
 	setCantidad();
 	setCategoria();
 }
-
 
 function setNombre() {
 	return nombre = document.getElementById("inputFormCompraNombre").value;

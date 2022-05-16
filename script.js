@@ -29,11 +29,11 @@ botonResumen.addEventListener("click", function(event) {
 		mensajesErrores.innerHTML = "";
 		
 		if (!validacionTexto(nombreAux)) {
-			errores += "El nombre ingresado no es válido por favor, ingrese un nombre válido, sin letras, espacios ni símbolos. <br>";
+			errores += "El nombre ingresado no es válido por favor, ingrese un nombre válido, sin números, espacios ni símbolos. <br>";
 			errorEncontrado = true;
 		}
 		if (!validacionTexto(apellidoAux)) {
-			errores += "El apellido ingresado no es válido, por favor, ingrese un apellido válido, sin letras, espacios ni símbolos. <br>";
+			errores += "El apellido ingresado no es válido, por favor, ingrese un apellido válido, sin números, espacios ni símbolos. <br>";
 			errorEncontrado = true;
 		}
 		if (!validacionMail(mailAux)) {
@@ -41,7 +41,7 @@ botonResumen.addEventListener("click", function(event) {
 			errorEncontrado = true;
 		}
 		if (!validacionCantidad(cantidadAux)) {
-			errores += "La cantidad ingresada no es válida, por favor, ingrese un valor numérico entero entre 1 y 999 <br>";
+			errores += "La cantidad ingresada no es válida, por favor, ingrese un valor numérico de 1 a 3 dígitos. <br>";
 			errorEncontrado = true;
 		}
 		if (errorEncontrado) {
